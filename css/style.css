@@ -95,10 +95,24 @@ h1 a:hover{
     color: var(--color-negro);
 }
 
+#curso{
+    background-image: url("../images/unicef-pucp.jpeg");
+    background-position: center center;
+    background-size: cover;
+    text-align: right;
+    color: var(--color-blanco);
+    background-attachment: fixed;
+}
+
+
 #historia{
     background-color: var(--color5);
 }
 
+
+#empresa{
+    background-color: var(--color1);
+}
 #valores{
     background-color: var(--color1);
         text-align: center; 
@@ -109,8 +123,13 @@ h1 a:hover{
     color:var(--color-blanco);
 }
 
-    #eventos{
+#eventos{
     background-color: var(--color3);
+    color: var(--color-negro);
+}
+
+#brecha{
+    background-color: var(--color4);
     color: var(--color-negro);
 }
 
@@ -186,4 +205,53 @@ h1 a:hover{
 .menu-main li a:hover{
     color: var(--color-blanco);
     text-decoration: none;
+}
+
+#lista-brecha-de-genero{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#lista-brecha-de-genero li{
+   flex-basis:45%;
+   background-color: var(--color2);
+   max-width: 45%;
+   text-align:center;
+   padding:15px;
+    box-sizing:border-box;
+    margin:5px;
+    cursor:pointer}
+
+.botonera{
+    display: flex;
+    margin-right: 5px;
+    border-radius: 50%;
+
+}
+.circulo{
+    border: solid 2px var(--color-gris-claro);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#boton-oscuro{
+    background-color: var(--color-gris-claro);
+}
+
+.mega-texto{
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 900;
+    line-height: 0.8em;
+}
+.texto-importante{
+    color: var(--color1);
 }
