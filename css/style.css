@@ -26,7 +26,9 @@ body{ /* Así se crea una regla de estilo para el objeto body */
 img{
     display: block;
 }
-
+figure{
+    margin:0;
+}
 
 
 
@@ -86,11 +88,11 @@ h1 a:hover{
 
 }
 
-#nosotros{ /* Así se aplica formato a un objeto por su id */
+#igualdad{ /* Así se aplica formato a un objeto por su id */
     background-color: var(--color2);
 }
 
-#noticias{
+#funcion-docente{
     background-color: var(--color4);
     color: var(--color-negro);
 }
@@ -105,12 +107,12 @@ h1 a:hover{
 }
 
 
-#historia{
+#principios{
     background-color: var(--color5);
 }
 
 
-#empresa{
+#empoderamiento{
     background-color: var(--color1);
 }
 #valores{
@@ -129,9 +131,27 @@ h1 a:hover{
 }
 
 #brecha{
-    background-color: var(--color4);
+    background-color: var(--color1);
     color: var(--color-negro);
 }
+#videos{
+    background-color: var(--color4);
+}
+
+#contactenos{
+    background-color: var(--color4);
+}
+
+#integrantes{
+    background-color:var(--color5);
+}
+
+#evaluacion{
+
+    background-color:var(--color-gris-claro);  
+}
+
+
 
 #main-footer{
     background-color: var(--color-gris-oscuro);
@@ -154,6 +174,7 @@ h1 a:hover{
     display: flex;
     margin-left: -15px;
     margin-right: -15px;
+    flex-wrap: wrap;
 }
 .col{
     padding-left: 15px;
@@ -207,7 +228,8 @@ h1 a:hover{
     text-decoration: none;
 }
 
-#lista-brecha-de-genero{
+#lista-brecha-de-genero,
+#lista-integrantes{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -216,7 +238,8 @@ h1 a:hover{
     justify-content:center;
 }
 
-#lista-brecha-de-genero li{
+#lista-brecha-de-genero li,
+#lista-integrantes li{
    flex-basis:45%;
    background-color: var(--color2);
    max-width: 45%;
@@ -255,3 +278,53 @@ h1 a:hover{
 .texto-importante{
     color: var(--color1);
 }
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    heigth: auto;
+  }
+
+.mapa{
+    aspect-ratio: 1/1;
+    with:100%;
+    heigth: auto;
+
+  }
+
+  /* Formulario **********/
+
+  .form-control{
+    width: 100%;
+    padding: 10px;
+    font: inherit;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border:none;
+    border-bottom: solid 1px var(--color-gris-claro);
+    outline:none;
+  }
+    .form-control: focus{
+     border-bottom-color: var(--color2);
+}   
+  .form-group{
+    margin-bottom: 5px;
+  
+  }
+  
+  .form-button{
+    padding: 10px 15px;
+    font: inherit;
+    border: none;
+    background-color: var(--color3);
+    color: var(--color-blanco);
+    transition: all .5s ease-in-out;
+
+  }
+  .form-button:hover{
+    background-color: #F0D237;
+    color: #000000;
+    cursor: pointer;
+
+
+  }

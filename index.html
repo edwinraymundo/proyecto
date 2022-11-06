@@ -6,53 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideas Digitales</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <!-- Así se vincula a la página web la hoja de estilos  -->
 </head>
-<body>
-<div id="top-nav">
+
+<nav id="top-nav">
     <div class="container">
         <ul class="menu menu-top">
-            <li><a href="#">Inicio </a></li>
-            <li><a href="#">Miembros del equipo </a></li>
-            <li><a href="#">Contactenos </a></li>
+            <li><a href="#" id = "menu-item-instituciones">Instituciones </a></li>
+            <li><a href="#" id = "menu-item-miembros">Miembros del equipo </a></li>
+            <li><a href="https://forms.gle/xiR3APN6UmWZguoQA" target="_blank"> Contactenos</a></li>
+            
         </ul>
     </div>
-</div>
-    <div id="main-header">
+</nav>
+    <header id="main-header">
         <div class="container" id="main-header-content">
             
             <div>
-                <h1><a href="#">BRECHAS </a></h1>
+                <h1><a href="/">BRECHAS </a></h1>
                 <p>MUJERES ADOLESCENTES Y LAS BRECHAS DE GÉNERO EN EL USO DE LA TECNOLOGÍA</p>
             </div>
-            <ul class = "menu menu-main">
-                <li><a href="#nosotros">Igualda de genero </a></li>
-                
-                <li><a href="#historia">La función docente </a></li>
-                <li><a href="#empresa">Empoderamiento de la mujer </a></li>
-                <li><a href="#noticias">Principios pedagógicos </a></li>
-                <li><a href="#brecha">Brechas de genero </a></li>
-                <li><a href="#valores">Valores </a></li>
-                <li><a href="#eventos">Eventos </a></li>
-            </ul>
 
+            <nav>
+                <ul class = "menu menu-main">
+                    <li><a href="#igualdad">Igualdad de genero </a></li>
+                    <li><a href="#funcion-docente">Función del docente </a></li>
+                    <li><a href="#empoderamiento">Empoderamiento de la mujer </a></li>
+                    <li><a href="#principios">Principios pedagógicos </a></li>
+                    <li><a href="#brecha">Brechas de genero </a></li>
+                    <li><a href="#valores">Valores </a></li>
+                    <li><a href="#eventos">Eventos </a></li>
+                    <li><a href="#evaluacion">Evaluación formativa </a></li>
+                 </ul>
+            </nav>
         </div><!-- container -->
-    </div><!-- main-header -->
+    </header><!-- main-header -->
 
-    <div id="main-banner">
+<main id = "main-content">
+    
+    <figure id="main-banner">
         <center><img src="images/brecha_digital_1200x400.jpg" alt="" class="img-fluid" ></center>
-    </div><!-- main-banner -->
+        <figcaption> </figcaption>
+    </figure><!-- main-banner -->
 
-    <div id="personajedia" class="padded">
+    <section id="personajedia" class="padded">
         <div class="container">
             <h2>El personaje del día</h2>
             <p id="frase-personaje"></p>
 
             <p class="mega-texto" id="nombre-personaje">Personaje del día</p>
         </div><!-- container -->
-    </div><!-- personajedia -->
+    </section><!-- personajedia -->
 
-    <div id="nosotros" class="padded">
+    <section id="igualdad" class="padded">
         <div class="container">
             <div class="botonera">
                 <div class="circulo" id="boton-claro"></div>
@@ -80,11 +88,11 @@
             </div>
       
         </div><!-- container -->
-    </div><!-- nosotros -->
+    </section><!-- igualdad -->
    
    
    
-    <div id="historia" class="padded">
+    <section id="funcion-docente" class="padded">
         <div class="container">
                         
             <h2>La función docente y brechas tecnológicas de género</h2>
@@ -101,9 +109,9 @@
                  </center>
             
                 </div>
-            </div
+            </div>
         </div> <!-- container -->
-    </div><!-- historia -->
+    </section><!-- funcion-docente -->
 
 
 
@@ -111,49 +119,59 @@
 
 
 
-    <div id="empresa">
+    <section id="empoderamiento">
         <div class="container">
             <h2>Empoderamiento de las mujeres</h2> 
             <p>Cada vez vas las mujeres van desarrollando más autonomía, seguridad, autosuficiencia por ello debemos de incentivar la participación plena de las mujeres en el ámbito personal, social, familiar   fomentando su empoderamiento a través del uso de la tecnología considerando:</p>
 
 
             <div class="row">
-                <div class="col">
-                    <img src="images/igualdad_2.jpg" alt="igualdad" class="img-fluid">
+                <article class="col">
+                    <figure>
+                        <img src="images/igualdad_2.jpg" alt="igualdad" class="img-fluid">
+                    </figure>
                     <h3>Igualdad de acceso</h3>
                     <p>Desde nuestro rol de docente fomentemos que las niñas y los niños se formen en   igualdad de deberes y derechos para que sean personas justas y tengan las mismas oportunidades de salir adelante y lograr su desarrollo personal y profesional.</p>
-                </div>
-                <div class="col">
-                    <img src="images/acesibilidad_2.jpg" alt="acesibilidad" class="img-fluid"> 
+                </article>
+                <article class="col">
+                    <figure>
+                        <img src="images/acesibilidad_2.jpg" alt="acesibilidad" class="img-fluid"> 
+                    </figure>
                     <h3>Accesibilidad</h3>
                     <p>El uso de la tecnología debe estar orientado a que todas las personas tengan las mismas posibilidades de acceder al bienestar social y al conocimiento que brinda la información a través de los entornos virtuales. Los docentes debemos promover la investigación formando estudiantes tecnológicos con conocimiento de la tecnología de los temas a desarrollar.</p>
-                </div>
-                <div class="col">
-                    <img src="images/estereotipo_2.jpg" alt="estereotipo" class="img-fluid">  
+                </article>
+                <article class="col">
+                    <figure>
+                        <img src="images/estereotipo_2.jpg" alt="estereotipo" class="img-fluid">  
+                    </figure>
                     <h3>Estereotipos de género y entornos laborales</h3>
                     <p>Rompamos esquemas que limitan a las mujeres encasillándolas a que lo femenino se asocia a inestabilidad emocional, ternura, dependencia y otros mitos mientras que el hombre representa estabilidad emocional, auto control con aptitud para las ciencias y la tecnología.  Las mujeres y los hombres deben trabajar en un ambiente de trabajo, donde se respete y se valore las capacidades y habilidades de cada uno sin hacer diferencia de género.</p>
-                </div>
-                <div class="col">
-                    <img src="images/seguridad_2.jpg" alt="seguridad" class="img-fluid">  
+                </article>
+                <article class="col">
+                    <figure>
+                        <img src="images/seguridad_2.jpg" alt="seguridad" class="img-fluid">  
+                    </figure>
                     <h3>Seguridad en línea</h3>
                     <p>Si bien el uso de la tecnología, nos permite estar informado y comunicarnos con las personas en tiempos real, es necesario tener cuidado en su uso para evitar que seamos sorprendidos por personas mal intencionadas, como, por ejemplo: Tener cuidado con lo que compartimos en redes sociales, ya que ciertas personas pueden hacer mal uso de nuestra información personal. No guarde información privada en el teléfono, ya que fácilmente puede ser sustraído por personas que pueden tener acceso a sus datos y utilice contraseñas combinando letras y símbolos, afín de que no sea descifrada fácilmente y preserve su información.                
                     </p>
-                </div>
+                </article>
                             
                 
             </div><!-- row -->
         </div><!-- container -->
-    </div><!-- empresa -->
+    </section><!-- empoderamiento -->
 
 
 
 
-    <div id="noticias" class="padded">
+    <section id="principios" class="padded">
         <div class="container">
             <h2>CONOCIMIENTO DE LOS PRINCIPIOS PEDAGÓGICOS</h2>
             <div class="row">
-                <div class="col">
+                <article class="col">
+                    <figure>
                     <img src="images/habilidades psicosociales_tecnico1.jpg" alt="habilidades psicosociales tecnico" class="img-fluid">
+                    </figure>    
                     <h3>Las  habilidades psicosociales </h3>
                    
                     <p>Podemos decir que las habilidades psicosociales han recibido varias denominaciones como  habilidades sociales, habilidades socioemocionales, habilidades blandas y habilidades para la vida, todas ellas enfatizan algún aspecto particular como un recurso necesario para gestionar la propia vida y las dinámicas sociales.Por ello podemos decir que se pueden dividir en dos grupos: </p>
@@ -181,9 +199,11 @@
                             <li>Colaboración.</li>
                             <li>Integridad moral.</li>
                         </ul>
-                </div>
-                <div class="col">
+                </article>
+                <article class="col">
+                    <figure>
                     <img src="images/APRENDIZAJE COOPERATIVO1.jpg" alt="APRENDIZAJE COOPERATIVO" class="img-fluid">
+                    </figure>
                     <h3>Aprendizaje cooperativo</h3>
                     <p>En el  largo del proceso de aprendizaje que atravesamos en nuestra vida existen habilidades técnicas como escuchar, hablar, leer, escribir y resolver problemas, pero  no serían muy útiles si con estas habilidades no se realiza una interacción cooperativa con las otras personas como en el trabajo, en la familia y en los entornos comunitarios.
                         Para los especialistas Johnson y Johnson dedicar mucho tiempo al aprendizaje de estas habilidades en relaciones cooperativas es la mejor manera que una persona en etapa adulta logre el uso adecuado del conocimiento y habilidades dentro de un marco cooperativo.</p>
@@ -203,9 +223,11 @@
                            
                         </ol>                     
                         
-                </div>
-                <div class="col">
-                    <img src="images/metacognicion.jpg" alt="" class="img-fluid">
+                </article>
+                <article class="col">
+                    <figure>
+                        <img src="images/metacognicion.jpg" alt="" class="img-fluid">
+                    </figure>
                     <h3>Metacognición</h3>
                     <p>
                         La metacognición es un término que se refiere a la capacidad que tienen las personas de autorregular su proceso de aprendizaje esto es saber  conocer y controlar sus propios estados mentales básicos que participan en su conocimiento.
@@ -216,22 +238,22 @@
                             <li> Meta-compresión: significa entender la capacidad que todos tienen de comprensión. </li>
                             </ol>   
                     </p>
-                </div>
+                </article>
             </div>
         </div><!-- container -->
-    </div><!-- noticias -->
+    </section><!-- principios -->
 
  
-    <div id="curso" class="padded">
+    <aside id="curso" class="padded">
         <div class="container">
             <p class="mega-texto"><span class="texto-importante">UNICEF</span><br> CURSO DE ACTUALIZACIÓN<br> EN ENSEÑANZA DE <br> <span class="texto-importante">PROGRAMACIÓN WEB</span> <br>PARA MUJERES ADOLESCENTES<br>
             <span class="texto-importante">2022-01</span> </p>
 
             
         </div><!-- container -->
-    </div><!-- curso -->
+    </aside><!-- curso -->
 
-    <div id="habilidades" class="padded">
+    <section id="habilidades" class="padded">
         <div class="container">
             
             <div class="row">    
@@ -243,57 +265,53 @@
                         <div class="circulo" id="boton-avanzar"></div>
                     </div>
                     <p class="mega-texto" id="nombre-habilidad"></p>
+                  
+                </div>
+                <figure class="col">
 
-                    
-                </div>
-                <div class="col">
                     <img src="" class="img-fluid" alt="" id="muestra">
-                </div>
+                    <figcaption>Imagenes de Habilidades Blandas</figcaption>
+                </figure>
             </div><!-- row -->
         </div><!-- container -->
-    </div><!-- habilidades -->
+    </section><!-- habilidades -->
 
-
-    <div id="valores" class="padded">
+    <section id="valores" class="padded">
         <div class="container">
             <h2>Valores</h2>
             <div class="row">
                 
                    <!--  .col*5>h3{valor $}+p>lorem16 --> 
-                    <div class="col">
+                    <article class="col">
                         <i class="fa-solid fa-cloud"></i>
-                        <h3>valor 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus et cum ipsam nesciunt iste aperiam.</p>
-                    </div>
-                    <div class="col">
+                        <h3>Empatia</h3>
+                        <p>Capacidad  de ponerse en el lugar de la otra persona.</p>
+                    </article>
+                    <article class="col">
                         <i class="fa-solid fa-paper-plane"></i>
-                        <h3>valor 2</h3>
-                        <p>At fugiat natus laudantium aut suscipit, delectus architecto, officia in incidunt libero praesentium nihil error ducimus.</p>
-                    </div>
-                    <div class="col">
+                        <h3>Asertividad</h3>
+                        <p>Haciendo referenica a la habilidad para ser claros, francos y directos, diciendo lo que se quiere decir , sin herir los sentimientos de los demas ni menospreciar la valia de los otros, solo defendiendo sus derechos como persona.</p>
+                    </article>
+                    <article class="col">
                         <i class="fa-brands fa-android"></i>
-                        <h3>valor 3</h3>
-                        <p>Accusamus earum quod quam sequi! Ducimus beatae incidunt perspiciatis maiores minus necessitatibus ipsum provident adipisci? Dolorem!</p>
-                    </div>
-                    <div class="col">
+                        <h3>Solidaridad</h3>
+                        <p>Realizar esfuerzos de manera altruista para ayudar a quienes mas necesita.</p>
+                    </article>
+                    <article class="col">
                         <i class="fa-solid fa-handshake"></i>
-                        <h3>valor 4</h3>
-                        <p>Deleniti aut iure id vitae aspernatur tempore, in vel iste, quaerat debitis quos rem quidem deserunt.</p>
-                    </div>
-                    <div class="col">
+                        <h3>Respeto</h3>
+                        <p>Respetar a nuestra familia, a nuestros amigos, y amigas, a quienes no conocemos, a culturas que nos parecen distitas, a quienes son diferentes ... genera un ambiente de comunicación y paz.</p>
+                    </article>
+                    <article class="col">
                         <i class="fa-solid fa-users"></i>
-                        <h3>valor 5</h3>
-                        <p>Repellendus doloribus voluptatum pariatur asperiores fugiat consequuntur consectetur vitae cumque, quidem est, beatae nisi dolorum numquam!</p>
-                    </div>
-
-                
-
-
-            </div><!-- row -->
+                        <h3>Responsabilidad</h3>
+                        <p>Asumir el compromiso de sus actos </p>
+                    </article>
+           </div><!-- row -->
         </div><!-- container -->
-    </div><!-- empresa -->
+    </section><!-- valores -->
 
-    <div id="frases" class="padded">
+    <section id="frases" class="padded">
         <div class="container">
             <h2>Frases</h2>
             <div class="row">
@@ -322,37 +340,54 @@
             </div> 
 
         </div><!-- container -->
-    </div><!-- empresa -->
+    </section><!-- frases -->
 
 
 
 
 
-    <div id="eventos" class="padded">
+    <section id="eventos" class="padded">
         <div class="container">
             <h2>Eventos</h2>
             <div class="row">
-                <div class="col col-50">
-                    <h3>Evento1</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, aliquam, placeat enim cupiditate in animi neque ea a suscipit magni sint sit porro temporibus ducimus quibusdam at omnis explicabo veniam unde magnam?</p>
-                    <p>Labore corporis asperiores quod quae. Nobis iusto eaque sequi fugiat aspernatur eius deserunt, veritatis illum rerum quaerat alias nihil itaque sit. Dignissimos tenetur quos quod temporibus. Mollitia praesentium recusandae cum ab deleniti.</p>
-                </div>
-                <div class="col">
-                    <h3>Evento 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus necessitatibus voluptatem nesciunt dicta, accusantium rerum quod eligendi provident qui. Adipisci optio quisquam fugit rem error, deleniti qui placeat totam ipsum, necessitatibus iusto.</p>
-                    <p>Deserunt nam modi quos perspiciatis commodi error vel cum iusto esse, numquam aut recusandae, alias omnis assumenda optio soluta adipisci amet, exercitationem impedit explicabo libero facilis suscipit quod ex. Aliquid, deleniti blanditiis.</p>
-                </div>
-                <div class="col">
-                    <h3>Evento 3</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae eius temporibus unde quod velit quo! Neque explicabo aliquid pariatur repellendus esse quos voluptatum possimus deleniti, laborum saepe nostrum maxime omnis modi magni.</p>
-                    <p>Optio neque doloribus dolorem maiores quo deleniti ipsam illo laudantium, qui aperiam nulla. Fugiat perspiciatis, quam quas expedita exercitationem labore excepturi numquam facilis eaque saepe atque corporis odit aut nisi, sunt ipsa?</p>
-                </div>
-                
+                <article class="col col-50">
+                    <h3>Aula Magna 2022
+                        Impacto y propuestas para enfrentar el cambio climático</h3>
+                    <p>Anualmente, la Pontificia Universidad Católica del Perú organiza Aula Magna, un importante espacio de diálogo académico, de alcance internacional, en el que un grupo de especialistas abordan los temas más relevantes de nuestros tiempos. El propósito de este evento es analizar cuidadosamente cada tema para cumplir con una de nuestras principales misiones como universidad: el pensamiento y la reflexión social. </p>
+                    <p>FECHAS: 14 al 16 de noviembre 2022</p>
+
+                    <p>HORA: 6 p.m. a 9 p.m.</p>
+                        
+                    <p> ORGANIZA:</p>
+                    <p>Vicerrectorado Académico - Pontificia Universidad Católica del Perú</p>
+                        
+                    <p>LUGAR:</p>
+                    <p> Auditorio de Derecho - campus universitario</p>
+                    <p>(Av. Universitaria 1801, San Miguel)</p>
+                        
+                    <p>Ingreso Libre,<a href="https://ares.pucp.edu.pe/pucp/procinsc/piwinsrp/piwinsrp?accion=Inscripcion&tp=032&id=22628&a=&l=&cis=&on=&lp=" target="_blank"> previa inscripción.</a> Capacidad limitada.</p>
+                    
+                </article>
+                <article class="col">
+                    <h3>¿Mujeres en minería?: Experiencias y análisis de la participación femenina en el rubro minero</h3>
+
+                    <p>La Facultad de Ciencias Sociales y el proyecto Women in Mining - WIM invitan a la comunidad a participar del conversatorio ¿Mujeres en minería?: Experiencias y análisis de la participación femenina en el rubro laboral minero. Este encuentro busca dar una primera aproximación, desde las experiencias directas y el análisis académico, a la participación de las mujeres en la mediana y gran minería a nivel laboral en el Perú.</p>
+                    <p> FECHAS: 10 de noviembre del 2022</p>
+                    <p>HORA: 12:00 pm a 2:00 pm</p>
+                    <p> LUGAR:</p>
+                    <p>Piso 9° de la Biblioteca de Ciencias Sociales</p>
+                   
+                    <p> Ingreso libre previo registro</p>
+                    <p> DIRIGIDO A:</p>
+                    <p> Alumnos - Egresados - Docentes - Investigadores - Administrativos - Comunidad PUCP</p>
+                                 
+                </article>
+                                
             </div>
         </div><!-- container -->
-    </div><!-- eventos -->
+    </section><!-- eventos -->
 
-    <div id="brecha" class="padded">
+    <section id="brecha" class="padded">
         <div class="container">
             
             <div class="row">
@@ -366,23 +401,124 @@
                         <li id="boton-promover-ciencia">Crear un ambiente que promueva a las ciencias</li>
                     </ul>
 
-
                 </div>
                 <div class="col">
-                    <img src="images/pinguinos.png" class="img-fluid" alt=" " id="visor">
+                    <figure>
+                         <img src="images/brecha-genero-disparidad-hombre-mujer.jpg" class="img-fluid" alt=" " id="visor">      </img>
+                    </figure>
+                </div>
+            </div>
+        </div><!-- container -->
+    </section><!-- brecha -->
+
+
+    <section id="videos" class="padded">
+        <div class="container">
+            <h2>Videos</h2>
+            <div class="row">
+                <div class="col">
+                
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F2pRSfyUqAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div>
+                <div class="col">
+                    <video class="video" autoplay controls>
+                         <source  src="video/VideoEducativo.mp4"></source>
+                    </video>
+                 
 
                 </div>
             </div>
         </div><!-- container -->
-    </div><!-- brecha -->
+    </section><!-- videos -->
 
 
-    <div id="main-footer">
+    <section id="contactenos" class="padded">
+        <div class="container">
+            <h2>Contactenos</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre Completo">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Correo electronico">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Mensaje o Comentario" row = "10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="form-button"  title="Escribanos su comentario"> Enviar mensaje</button>
+                    </div>
+                     
+                    
+                   
+                </div>
+                <div class="col">
+                 
+                    <iframe class="mapas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.559363960991!2d-77.08051756975902!3d-12.073809468859112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c912d40840a5%3A0xd7a0bfb797e5862e!2sPontificia%20Universidad%20Cat%C3%B3lica%20del%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1666748155642!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div><!-- container -->
+    </section><!-- contactenos -->
+
+
+
+    <section id="evaluacion" class="padded">
+        <div class="container">
+            <h2>Evaluación formativa</h2>
+            <div class="row">
+                <div class="col">
+                <figure>  
+                 <center>
+                    <img src="images/evaluacion formativa.jpeg" class="img-fluid" alt=" " id="visor">      </img>
+                </center>
+                </figure>
+                </div>
+            </div>
+        </div><!-- container -->
+    </section><!-- evaluacion -->
+
+    <section id="integrantes" class="padded">
+        <div class="container">
+            <h2>Integrantes del grupo 6</h2>
+            <div class="row">
+                <div class="col">
+                    <ul id="lista-integrantes">
+                        <li id="boton-edwin">Edwin Raymundo Presentación</li>
+                        <li id="boton-alexander">Hercules Alexander Guanilo Noriega </li>
+                        <li id="boton-mercedes">Mercedes Doris LLalle Ramos</li> 
+                        <li id="boton-angel">Angel Zevallos Segovia</li> 
+                    </ul>
+                </div>
+                <div class="col" id="caja-integrantes">
+         
+                </div>
+                <div class="col" id="muestra-visor">
+                    <figure>
+                        <img src="images/equipo6.jpg" class="img-fluid" alt=" " id="muestra-visor">      </img>
+                    </figure>
+                </div>
+            </div>
+        </div><!-- container -->
+    </section><!-- integrantes -->
+
+
+</main>
+
+
+    <footer id="main-footer">
         <div class="container">
             2022 - Todos los derechos reservados
         </div><!-- container -->
-    </div><!-- main-footer -->
+    </footer><!-- main-footer -->
 
     <script src="js/main.js" ></script>
-</body>
+
+
+
 </html>
+

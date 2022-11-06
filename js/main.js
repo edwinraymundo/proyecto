@@ -16,20 +16,20 @@ document.getElementById("boton-promover-ciencia").addEventListener("click",funct
     muestraimagen.src="images/5promober la ciencia.jpg";
 });
 
-/************************************ */
+/*************cambio de color de seccion por medio de un botón *********************** */
 
 let bOscuro = document.getElementById("boton-oscuro");
 let bClaro = document.getElementById("boton-claro");
-let nosotros = document.getElementById("nosotros");
+let igualdad = document.getElementById("igualdad");
 
 bOscuro.addEventListener("click",function(){
     
-    nosotros.style.backgroundColor = "#000000";
-    nosotros.style.color = "#FFFFFF";
+    igualdad.style.backgroundColor = "#000000";
+    igualdad.style.color = "#FFFFFF";
 });
 bClaro.addEventListener("click",function(){
-    nosotros.style.backgroundColor = "#F78B6D";
-    nosotros.style.color = "#333333";
+    igualdad.style.backgroundColor = "#F78B6D";
+    igualdad.style.color = "#333333";
 });
 
 let frases=[];
@@ -95,7 +95,7 @@ function cambiarPersonaje(){
     frasePersonaje.innerHTML = frasedelpersonaje[aleatorio]
     nombrePersonaje.innerHTML = personajes[aleatorio];
 }
-setInterval(cambiarPersonaje, 5000);
+setInterval(cambiarPersonaje, 1000);
 
 
 //GALERIA con botones
@@ -150,4 +150,82 @@ bRetroceder.addEventListener("click", function(){
 }); 
 
 
+//let muestraintegrante = document.getElementById("muestra")
 
+//API FETCH
+let bEdwin = document.getElementById("boton-edwin");
+let bAlexander = document.getElementById("boton-alexander");
+let bMercedes = document.getElementById("boton-mercedes");
+let bAngel = document.getElementById("boton-angel");
+let cIntegrantes = document.getElementById("caja-integrantes");
+
+//let muestraimagen = document.getElementById("muestra-visor");
+
+
+
+bEdwin.addEventListener("click",function(){
+   
+    fetch('integrantes/edwin.html')
+    .then(response =>response.text())
+    .then(data =>{
+        //console.log(data);
+        cIntegrantes.innerHTML = data;
+    //     muestraimagen.src="images/1mentalidad de crecimiento.jpg";
+   });
+});
+
+//document.getElementById("boton-edwin").addEventListener("click",function(){
+  //  muestraimagen.src="images/1mentalidad de crecimiento.jpg";
+ //});
+
+bAlexander.addEventListener("click",function(){
+    fetch('integrantes/alexander.html')
+    .then(response =>response.text())
+    .then(data =>{
+        //console.log(data);
+        cIntegrantes.innerHTML = data;
+    });
+});
+bMercedes.addEventListener("click",function(){
+    fetch('integrantes/mercedes.html')
+    .then(response =>response.text())
+    .then(data =>{
+        //console.log(data);
+        cIntegrantes.innerHTML = data;
+    });
+});
+bAngel.addEventListener("click",function(){
+    fetch('integrantes/angel.html')
+    .then(response =>response.text())
+    .then(data =>{
+        //console.log(data);
+        cIntegrantes.innerHTML = data;
+    });
+});
+
+
+
+// API FETC para cargar páginas
+
+let iInstituciones = document.getElementById("menu-item-instituciones");
+let iMiembros = document.getElementById("menu-item-miembros");
+
+let mContent = document.getElementById("main-content");
+
+iInstituciones.addEventListener("click",function(){
+    fetch('paginas/instituciones.html')
+    .then(response => response.text())
+    .then(data =>{
+        //console.log(data);
+        mContent.innerHTML = data;
+    });
+});
+
+iMiembros.addEventListener("click",function(){
+    fetch('paginas/miembros.html')
+    .then(response => response.text())
+    .then(data =>{
+        //console.log(data);
+        mContent.innerHTML = data;
+    });
+});
