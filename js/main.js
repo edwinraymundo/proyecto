@@ -115,7 +115,7 @@ let habilidades = [];
 habilidades[0] = "images/resolverproblemas.jpeg";
 habilidades[1] = "images/sociabilidad1.jpg";
 habilidades[2] = "images/trabajoenequipo.jpeg";
-habilidades[3] = "images/creatividad.jpg";
+habilidades[3] = "images/creatividad1.jpg";
 habilidades[4] = "images/escuchaactiva.jpg";
 
 let bRetroceder = document.getElementById("boton-retroceder");
