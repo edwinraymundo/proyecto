@@ -247,7 +247,12 @@ h1 a:hover{
    padding:15px;
     box-sizing:border-box;
     margin:5px;
-    cursor:pointer}
+    cursor:pointer;
+}
+
+#lista-frases{
+    cursor:pointer;
+}
 
 .botonera{
     display: flex;

@@ -1,7 +1,6 @@
 var muestraimagen = document.getElementById("visor")
 document.getElementById("boton-crecimiento").addEventListener("click",function(){
     muestraimagen.src="images/1mentalidad de crecimiento.jpg";
-
 });
 document.getElementById("boton-valor-error").addEventListener("click",function(){
     muestraimagen.src="images/2error.jpg";
@@ -13,7 +12,7 @@ document.getElementById("boton-estereotipos").addEventListener("click",function(
     muestraimagen.src="images/4estereotipos.jpeg";
 });
 document.getElementById("boton-promover-ciencia").addEventListener("click",function(){
-    muestraimagen.src="images/5promober la ciencia.jpg";
+    muestraimagen.src="images/5promover_la_ciencia.jpg";
 });
 
 /*************cambio de color de seccion por medio de un botón *********************** */
