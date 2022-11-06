@@ -1,3 +1,4 @@
+///*** habilidades blandas */
 var muestraimagen = document.getElementById("visor")
 document.getElementById("boton-crecimiento").addEventListener("click",function(){
     muestraimagen.src="images/1mentalidad de crecimiento.jpg";
@@ -31,6 +32,7 @@ bClaro.addEventListener("click",function(){
     igualdad.style.color = "#333333";
 });
 
+//****Frases  */
 let frases=[];
 frases[0]="Solo sé que nada sé";
 frases[1]="Vine vi y venci";
@@ -58,7 +60,7 @@ botonfrase4.addEventListener("click", function(){
 })
 
 
-
+//**Pensamientos de mujeres exitosas */
 	
 let nombrePersonaje = document.getElementById("nombre-personaje");
 let frasePersonaje = document.getElementById("frase-personaje");
