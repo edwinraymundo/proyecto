@@ -3,7 +3,7 @@ document.getElementById("boton-crecimiento").addEventListener("click",function()
     muestraimagen.src="images/1mentalidad de crecimiento.jpg";
 });
 document.getElementById("boton-valor-error").addEventListener("click",function(){
-    muestraimagen.src="images/2error.jpg";
+    muestraimagen.src="images/2errores.jpg";
 });
 document.getElementById("boton-mujer-exitosa").addEventListener("click",function(){
     muestraimagen.src="images/3mujeres exitosas.jpg";
